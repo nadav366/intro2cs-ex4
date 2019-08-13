@@ -1,0 +1,29 @@
+nadav366
+205457534
+Nadav Har-tuv
+I talked about the exercise with Guy Katz, Yair Shemer, and Itay Tayar.
+
+A program that plays hangman.
+    In writing the code, we learned a division into small functions,
+    working with an external function file and using complex loops.
+A program that test the update_word_pattern function.
+
+
+section C- q1:
+To make sure that the function works properly, we will look at as many
+ different and special cases as possible, and check that the function
+ updates the pattern properly.
+    ("word", "__r_", 'h')-
+    Make sure that when the letter does not appear, the pattern does not change.
+    ("aaaa", "____", 'a')-
+    Makes sure that when the letter is all word, the pattern is updated to be the word itself.
+    ("nnxaxsfx", "___a____", 'x')-
+    Makes sure that when the letter appears several times, in different places, all places
+    are updated to be the letter.
+    ("abcde", "a_c_e", 'c')-
+    Makes sure that when the letter appears in the word, it does not change.
+
+section C- q2:
+    To adapt the software to Hebrew, we will make the following changes:
+    - The magic number CHAR_A will be set to 1488 (The serial number of a alef)
+    - The magic number LETTERS_NUM will be set to 22 (Number of Hebrew letters)
